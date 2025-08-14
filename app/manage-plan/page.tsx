@@ -1,5 +1,4 @@
 import SchematicComponent from '@/components/schematic/schematic-component'
-import React from 'react'
 
 export default function page() {
   return (

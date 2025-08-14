@@ -1,5 +1,5 @@
 import { getTemporaryAccessToken } from '@/actions/get-temorary-access-token';
-import { SchematicEmbed } from '@schematichq/schematic-components';
+import SchematicEmbed from './schematic-embed';
 
 async function SchematicComponent({componentId}: {componentId?: string}) {
 
@@ -13,7 +13,7 @@ async function SchematicComponent({componentId}: {componentId?: string}) {
         throw new Error("Failed to get temporary access token");
     }
 
-  return <SchematicEmbed accessToken={accessToken} id={componentId} />
+  return <SchematicEmbed accessToken={accessToken} componentId={componentId} />
 }
 
 export default SchematicComponent;

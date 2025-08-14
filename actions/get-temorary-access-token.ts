@@ -19,7 +19,7 @@ export async function getTemporaryAccessToken() {
     console.log(`User found. Issuing temporary access token for user ${user.id}`);
 
     const resp = await client.accesstokens.issueTemporaryAccessToken({
-        //resourceType: "company",
+        
         lookup: { userId: user.id }, // The lookup will vary depending on how you have configured your company keys
     });
 
